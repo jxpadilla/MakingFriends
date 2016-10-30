@@ -179,7 +179,7 @@
         '.chosen-select-width': {
             width: "95%"
         }
-    }
+    };
     for (var selector in config) {
         $(selector).chosen(config[selector]);
     }
@@ -189,7 +189,7 @@
 
         // Form validation
         function validateForm() {
-            var isValid = true;
+            var isValid === true;
             $('.form-control').each(function() {
                 if ($(this).val() === '')
                     isValid = false;
@@ -204,13 +204,13 @@
         }
 
         // If all required fields are filled
-        if (validateForm() == true) {
+        if (validateForm() === true) {
             // Create an object for the user's data
             var userData = {
                 name: $("#name").val(),
                 photo: $("#photo").val(),
                 scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
-            }
+            };
 
 
             // Grab the URL of the website
